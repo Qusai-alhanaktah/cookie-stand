@@ -45,7 +45,6 @@ Shop.prototype.hourlyCustomers = function () {
 Shop.prototype.cookies = function () {
 
     for (var i = 0; i < this.hour.length; i++) {
-        var x = 0;
         this.amountsOfcookies[i] = Math.floor(this.hourlyCustomers() * this.avgCookie);
         this.total += this.amountsOfcookies[i];
         
@@ -98,7 +97,6 @@ Shop.prototype.cookies = function () {
     }
     totalOfTotal1 = totalOfTotal1 + this.total;
     
-    console.log(totalOfTotal1);
 }
 
 
@@ -182,12 +180,12 @@ for (let u = 0; u < hour.length - 2; u++) {
     td1El.textContent = this.totalCloumn[u];
     totalOfTotal2 = totalOfTotal2 + this.totalCloumn[u]
 }
-console.log(totalOfTotal2);
 var totalOfTotal = 0;
 totalOfTotal = totalOfTotal1 + totalOfTotal2;
 var td1El = document.createElement('td');
 footerRowEl.appendChild(td1El);
 td1El.textContent = totalOfTotal;
+<<<<<<< HEAD
 var rowCount = table.rows.length;
 
 
@@ -217,3 +215,5 @@ var rowCount = table.rows.length;
     console.log(totalOfTotal);
     
     }
+=======
+>>>>>>> lab7
