@@ -97,32 +97,10 @@ Shop.prototype.cookies = function () {
         }
     }
     totalOfTotal1 = totalOfTotal1 + this.total;
-    // console.log(totalCloumn)
     
     console.log(totalOfTotal1);
 }
 
-// Shop.prototype.render = function () {
-//     var container = document.getElementById('salesProfiles');
-//     var articleEl = document.createElement('article');
-//     container.appendChild(articleEl);
-//     var h2El = document.createElement('h2');
-//     articleEl.appendChild(h2El);
-//     h2El.textContent = this.name;
-//     var ulEl = document.createElement('ul');
-//     articleEl.appendChild(ulEl);
-//     for (var i = 0; i < this.hour.length; i++) {
-//         var liEl = document.createElement('li');
-//         ulEl.appendChild(liEl);
-//         liEl.textContent = this.hour[i] + ": " + this.amountsOfcookies[i] + ` cookies`;
-//     }
-//     var liEl = document.createElement('li');
-//     ulEl.appendChild(liEl),
-//         liEl.textContent = "Total " + ": " + this.total + ` cookies`;
-//     //  totalOfTotal1 = totalOfTotal1 + this.total;
-//     //         console.log(totalOfTotal1);
-// }
-// //////Table Function////////
 
 Shop.prototype.render1 = function () {
 
@@ -147,31 +125,7 @@ Shop.prototype.render1 = function () {
     
     
 }
-// Shop.prototype.render2 = function () {
 
-
-//     var footerRowEl = document.createElement('tr');
-//     table.appendChild(footerRowEl);
-//     var tdEl = document.createElement('td');
-//     tdEl.textContent = "Total";
-//     footerRowEl.appendChild(tdEl);
-    
-//     for (let u = 0; u < hour.length - 2; u++) {
-//         var td1El = document.createElement('td');
-//         footerRowEl.appendChild(td1El);
-//         td1El.textContent = totalCloumn[u];
-//         console.log(totalCloumn);
-//         totalOfTotal2 = totalOfTotal2 + this.totalCloumn[u]
-//     }
-//     console.log(totalOfTotal2);
-//     var totalOfTotal = 0;
-//     totalOfTotal = totalOfTotal1 + totalOfTotal2;
-//     var td1El = document.createElement('td');
-//     footerRowEl.appendChild(td1El);
-//     td1El.textContent = totalOfTotal;
-//     console.log(totalOfTotal);
-    
-//     }
     
     form.addEventListener("submit",function (event) {
         event.preventDefault();
@@ -186,7 +140,6 @@ Shop.prototype.render1 = function () {
         var rowCount = table.rows.length;
         table.deleteRow(rowCount -1);
         newShop.render1();
-        // newShop.deleterow();
         render2();
         form.reset();
 
@@ -213,8 +166,7 @@ for (var i = 0; i < shops.length; i++) {
     shops[i].hourlyCustomers();
     shops[i].cookies();
     shops[i].render1();
-    // shops[i].deleterow();
-    // shops[i].render();
+    
 }
 
  
@@ -239,7 +191,6 @@ td1El.textContent = totalOfTotal;
 var rowCount = table.rows.length;
 
 
-// -------------------------------------------------------------
 
  function render2  () {
 
