@@ -185,7 +185,6 @@ totalOfTotal = totalOfTotal1 + totalOfTotal2;
 var td1El = document.createElement('td');
 footerRowEl.appendChild(td1El);
 td1El.textContent = totalOfTotal;
-<<<<<<< HEAD
 var rowCount = table.rows.length;
 
 
@@ -214,6 +213,4 @@ var rowCount = table.rows.length;
     td1El.textContent = totalOfTotal;
     console.log(totalOfTotal);
     
-    }
-=======
->>>>>>> lab7
+ }
