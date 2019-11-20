@@ -180,7 +180,7 @@ Shop.prototype.render1 = function () {
         var max = event.target.max.value;
         var avgCookie = event.target.avgCookie.value;
         var newShop = new Shop(name,min,max,avgCookie);
-        shops.push(newShop);
+        // shops.push(newShop);
         newShop.hourlyCustomers();
         newShop.cookies();
         var rowCount = table.rows.length;
