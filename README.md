@@ -16,6 +16,8 @@
 5. consol
 6. function
 
+## live link:[live link](https://qusai-alhanaktah.github.io/cookie-stand/)
+
 ## license
 This project is licensed under the MIT License.
 
